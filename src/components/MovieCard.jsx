@@ -15,8 +15,10 @@ const MovieCard = ({
         className="rounded-lg h-auto w-full"
       />
 
-      <div className="p-4">
-        <h2 className="text-white font-bold text-base line-clamp-1">{title}</h2>
+      <div className="py-4">
+        <h2 className="text-gray-700 font-bold text-base line-clamp-1">
+          {title}
+        </h2>
 
         {overview && (
           <p className="text-gray-400 text-sm mb-2 line-clamp-2">{overview}</p>

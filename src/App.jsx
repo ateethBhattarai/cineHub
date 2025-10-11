@@ -3,6 +3,7 @@ import MovieCard from "./components/MovieCard";
 import SearchInput from "./components/SearchInput";
 import { getMovies, getGenres } from "./api/movie_api";
 import { useDebounce } from "react-use";
+import LoadingSpinner from "./components/LoadingSpinner";
 
 const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w200";
 
@@ -64,12 +65,7 @@ const App = () => {
 
   // Handle loading
   if (isLoading) {
-    return (
-      <div className="flex items-center justify-center min-h-screen">
-        <img className="animate-spin" src="/loading.png" alt="loading" />
-        {console.log("loading", isLoading)}
-      </div>
-    );
+    return <LoadingSpinner />;
   }
 
   return (
