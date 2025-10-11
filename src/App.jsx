@@ -5,7 +5,7 @@ import { getMovies, getGenres } from "./api/movie_api";
 import { useDebounce } from "react-use";
 import LoadingSpinner from "./components/LoadingSpinner";
 
-const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w200";
+const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500";
 
 const App = () => {
   const [movieList, setMovieList] = useState([]);
