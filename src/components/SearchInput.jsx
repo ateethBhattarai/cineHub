@@ -5,7 +5,7 @@ const SearchInput = () => {
   const [query, setQuery] = useState("");
 
   return (
-    <div className="flex w-screen items-center justify-center h-fit">
+    <div className="flex items-center justify-center h-fit">
       <div className="w-[45%] flex border-1 rounded-md items-center justify-around">
         <input
           type="text"
